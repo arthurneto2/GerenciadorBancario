@@ -1,4 +1,12 @@
+
 import java.util.Scanner;
+
+import Entidades.BancoCentral;
+import Menus.MenuAgencia;
+import Menus.MenuCliente;
+import Menus.MenuCorrente;
+import Menus.MenuFuncionario;
+import Menus.MenuPoupanca;
 
 public class GerenciadorBancario {
 
