@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class MenuAgencia {
-	public void menuAgencia(BancoCentral bancoCentral, Scanner scanner) {
+	
+	public static void menuAgencia(BancoCentral bancoCentral, Scanner scanner) {
 		int opcaoMenuAgencias;
 		System.out.println("\n----- MENU AGÊNCIAS ----\n");
 		do {

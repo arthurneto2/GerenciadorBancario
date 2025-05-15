@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MenuFuncionario {
-	public void menuFuncionario(BancoCentral bancoCentral, Scanner scanner) {
+	public static void menuFuncionario(BancoCentral bancoCentral, Scanner scanner) {
 		GerenciadorFuncionairos gerenciadorFuncionarios = new GerenciadorFuncionairos(bancoCentral, scanner); 
 		int opcaoMenuFuncionarios;
 		System.out.println("\n----- MENU FUNCIONÁRIOS ----\n");

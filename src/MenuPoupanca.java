@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MenuPoupanca {
-	public void menuPoupanca(BancoCentral bancoCentral, Scanner scanner) {
+	public static void menuPoupanca(BancoCentral bancoCentral, Scanner scanner) {
 		GerenciadorPoupanca gerenciadorPoupanca = new GerenciadorPoupanca(bancoCentral, scanner); 
 		int opcaoMenuPoupanca;
 		System.out.println("\n----- MENU CONTAS ----\n");

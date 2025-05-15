@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class MenuCorrente {
-	public void menuCorrente(BancoCentral bancoCentral, Scanner scanner) {
+	
+	public static void menuCorrente(BancoCentral bancoCentral, Scanner scanner) {
 		GerenciadorCorrente gerenciadorCorrente = new GerenciadorCorrente(bancoCentral, scanner); 
 		int opcaoMenuCorrente;
 		System.out.println("\n----- MENU CONTAS ----\n");

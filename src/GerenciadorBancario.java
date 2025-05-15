@@ -3,13 +3,10 @@ import java.util.Scanner;
 public class GerenciadorBancario {
 
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 		BancoCentral bancoCentral = new BancoCentral(scanner);
-		MenuAgencia menuAgencia = new MenuAgencia();
-		MenuFuncionario menuFuncionario = new MenuFuncionario();
-		MenuCorrente menuCorrente = new MenuCorrente();
-		MenuPoupanca menuPoupanca = new MenuPoupanca();
-		MenuCliente menuClientes = new MenuCliente();
+		
 		System.out.println("\n### Gerenciador Bancario ###\n");
 		System.out.println("\n----- MENU INICIAL -----\n");
 		int opcaoMenuInicia;
@@ -29,19 +26,19 @@ public class GerenciadorBancario {
 				System.out.println("\nENCERRANDO PROGRAMA...");
 				break;
 			case 1:
-				menuAgencia.menuAgencia(bancoCentral, scanner);
+				MenuAgencia.menuAgencia(bancoCentral, scanner);
 				break;
 			case 2:
-				menuCorrente.menuCorrente(bancoCentral, scanner);
+				MenuCorrente.menuCorrente(bancoCentral, scanner);
 				break;
 			case 3:
-				menuPoupanca.menuPoupanca(bancoCentral, scanner);
+				MenuPoupanca.menuPoupanca(bancoCentral, scanner);
 				break;
 			case 4:
-				menuFuncionario.menuFuncionario(bancoCentral, scanner);
+				MenuFuncionario.menuFuncionario(bancoCentral, scanner);
 				break;
 			case 5:
-				menuClientes.menuCliente(bancoCentral, scanner);
+				MenuCliente.menuCliente(bancoCentral, scanner);
 			default:
 				System.out.println("Opção invalida!!!");
 				break;

@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class MenuCliente {
-	public void menuCliente(BancoCentral bancoCentral, Scanner scanner) {
+	
+	public static void menuCliente(BancoCentral bancoCentral, Scanner scanner) {
 		GerenciadorClientes gerenciadorClientes = new GerenciadorClientes(bancoCentral, scanner); 
 		int opcaoMenuClientes;
 		System.out.println("\n----- MENU CLIENTE ----\n");
